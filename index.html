@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff8f0" />
+  <title>故事星球 · AI 有声故事</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home"><span class="brand-mark">✦</span><span>故事星球</span></a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="#home" data-route="home">首页</a><a href="#create" data-route="create">创作故事</a><a href="#voices" data-route="voices">我的声音</a><a href="#library" data-route="library">作品库</a>
+      </nav>
+      <div class="top-actions"><button class="points-pill" id="pointsBtn">✦ <span id="points">128</span> 积分</button><button class="avatar" title="个人中心">林</button></div>
+    </header>
+
+    <main>
+      <section class="page active" id="home-page">
+        <div class="hero">
+          <div class="hero-copy"><div class="eyebrow">每天 10 分钟的亲子魔法</div><h1>把你的声音，<br><em>变成孩子的故事。</em></h1><p>录一段你的声音，故事星球就能用你的声音，为孩子讲述专属的睡前故事。</p><div class="hero-actions"><a class="btn primary" href="#create">开始创作 <span>→</span></a><button class="text-btn" data-scroll="features">看看怎么玩 <span>↓</span></button></div><div class="trust-row"><span>🔒 隐私安全</span><span>☁️ 自动保存</span><span>♡ 专为亲子设计</span></div></div>
+          <div class="hero-art" aria-label="星球和小熊插画"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="planet">☾</div><div class="cloud cloud-a">☁</div><div class="cloud cloud-b">☁</div><div class="bear">🐻</div><div class="star s1">✦</div><div class="star s2">✧</div><div class="star s3">✦</div></div>
+        </div>
+        <div class="section-head" id="features"><div><div class="eyebrow">三步就能开始</div><h2>让陪伴，随时发生</h2></div><span class="section-note">为 1–12 岁孩子定制</span></div>
+        <div class="feature-grid"><article class="feature-card blue"><div class="feature-icon">🎙️</div><span class="step">01</span><h3>录下你的声音</h3><p>录一段 10 秒以上的声音，建立专属声音样本。</p><a href="#voices">去录音 →</a></article><article class="feature-card yellow"><div class="feature-icon">🪄</div><span class="step">02</span><h3>创作一个故事</h3><p>选择年龄、主题和风格，AI 帮你写出精彩故事。</p><a href="#create">开始创作 →</a></article><article class="feature-card green"><div class="feature-icon">🌙</div><span class="step">03</span><h3>用你的声音讲述</h3><p>一键生成有声故事，睡前打开就能听。</p><a href="#library">查看作品 →</a></article></div>
+        <div class="dashboard-strip"><div><span class="mini-label">本周陪伴</span><strong>3 <small>个故事</small></strong></div><div class="progress-wrap"><div class="progress-label"><span>连续陪伴 3 天</span><span>目标 7 天</span></div><div class="progress"><i style="width:43%"></i></div></div><a class="btn soft" href="#library">继续陪伴</a></div>
+      </section>
+
+      <section class="page" id="voices-page"><div class="page-title"><div><div class="eyebrow">VOICE STUDIO</div><h1>我的声音库</h1><p>保存你的声音，让每一个故事都带着熟悉的温度。</p></div><button class="btn primary" id="uploadBtn">＋ 上传音频</button><input id="fileInput" type="file" accept="audio/*" hidden></div><div class="voice-layout"><div class="record-card"><div class="record-visual"><div class="record-orb" id="recordOrb">🎙️</div><div class="waveform" id="waveform"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><h2>录一段声音样本</h2><p>建议朗读下面这段话，保持环境安静、距离麦克风 20cm 左右。</p><blockquote>“宝贝，今天爸爸妈妈给你讲一个故事。闭上眼睛，让我们一起出发吧！”</blockquote><div class="record-actions"><button class="btn primary record-btn" id="recordBtn">开始录音</button><button class="btn outline" id="stopBtn" disabled>完成录音</button></div><small id="recordStatus">录音时长建议 10–120 秒</small></div><div class="voice-list-card"><div class="card-heading"><h2>我的样本</h2><span id="voiceCount">0 / 5</span></div><div id="voiceList" class="voice-list"><div class="empty-state">还没有声音样本<br><span>录下第一段声音，让故事拥有你的温度。</span></div></div><div class="system-voices"><div class="card-heading"><h2>系统音色</h2><a href="#voices">查看全部</a></div><div class="system-row"><button class="system-voice selected">🌷 <span>温柔妈妈<small>睡前故事</small></span><b>▶</b></button><button class="system-voice">☀️ <span>阳光哥哥<small>冒险故事</small></span><b>▶</b></button><button class="system-voice">📖 <span>绘本旁白<small>全场景</small></span><b>▶</b></button></div></div></div></div></section>
+
+      <section class="page" id="create-page"><div class="page-title"><div><div class="eyebrow">STORY MAKER</div><h1>创作一个故事</h1><p>告诉我你想讲什么，剩下的交给故事星球。</p></div><span class="save-status" id="saveStatus">● 自动保存已开启</span></div><div class="create-layout"><div class="form-card"><label>故事主题 <span>必填</span></label><textarea id="topic" placeholder="例如：小兔子第一次去月亮上旅行……"></textarea><div class="form-grid"><label>适合年龄<select id="age"><option>3–6 岁</option><option>1–3 岁</option><option>6–9 岁</option><option>9–12 岁</option></select></label><label>故事风格<select id="style"><option>温馨睡前</option><option>奇幻冒险</option><option>自然科普</option><option>习惯养成</option><option>情商教育</option></select></label><label>故事长度<select id="length"><option>约 3 分钟</option><option>约 1 分钟</option><option>约 5 分钟</option><option>约 10 分钟</option></select></label><label>声音<select id="voice"><option>🌷 温柔妈妈</option><option>☀️ 阳光哥哥</option><option>🎙️ 我的声音</option><option>📖 绘本旁白</option></select></label></div><div class="tag-row"><span>推荐主题</span><button data-topic="勇敢的小兔子">勇气</button><button data-topic="森林里的朋友">友谊</button><button data-topic="小熊学会刷牙">好习惯</button><button data-topic="会说话的星星">想象力</button></div><button class="btn primary generate-btn" id="generateBtn">✨ 生成我的故事</button></div><div class="preview-card"><div class="preview-cover" id="previewCover"><span>✦</span><small>故事封面预览</small></div><div class="preview-content" id="previewContent"><div class="preview-placeholder">故事将在这里出现<br><span>先输入一个主题吧</span></div></div></div></div></section>
+
+      <section class="page" id="library-page"><div class="page-title"><div><div class="eyebrow">MY LIBRARY</div><h1>我的作品库</h1><p>把每一次创作，都收藏成孩子的成长记忆。</p></div><a class="btn primary" href="#create">＋ 新建故事</a></div><div class="library-tabs"><button class="active">全部 <span id="storyCount">3</span></button><button>已发布</button><button>草稿</button><button>收藏</button></div><div class="story-grid" id="storyGrid"><article class="story-card"><div class="story-cover cover-moon">🌙<span>晚安，月亮兔</span></div><div class="story-meta"><h3>晚安，月亮兔</h3><p>温馨睡前 · 3–6 岁</p><button class="play-story" data-title="晚安，月亮兔">▶ 播放故事</button></div></article><article class="story-card"><div class="story-cover cover-forest">🌲<span>森林里的小邮差</span></div><div class="story-meta"><h3>森林里的小邮差</h3><p>奇幻冒险 · 6–9 岁</p><button class="play-story" data-title="森林里的小邮差">▶ 播放故事</button></div></article><article class="story-card"><div class="story-cover cover-stars">⭐<span>星星的秘密</span></div><div class="story-meta"><h3>星星的秘密</h3><p>自然科普 · 3–6 岁</p><button class="play-story" data-title="星星的秘密">▶ 播放故事</button></div></article></div></section>
+    </main>
+
+    <nav class="mobile-nav"><a href="#home">⌂<span>首页</span></a><a href="#create">✦<span>创作</span></a><a href="#voices">♬<span>声音</span></a><a href="#library">▣<span>作品库</span></a></nav>
+    <div class="player" id="player"><div class="player-art">🌙</div><div class="player-info"><b id="playerTitle">晚安，月亮兔</b><small id="playerState">准备播放</small></div><button id="playerPlay">▶</button><div class="player-progress"><i id="playerProgress"></i></div><button class="player-close" id="playerClose">×</button></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
