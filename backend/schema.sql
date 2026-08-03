@@ -42,3 +42,4 @@ create index if not exists points_log_user_created_idx on points_log(user_id, cr
 create index if not exists model_usage_user_created_idx on model_usage(user_id, created_at desc);
 create index if not exists billing_orders_user_created_idx on billing_orders(user_id, created_at desc);
 create index if not exists sms_codes_phone_purpose_idx on sms_codes(phone, purpose, created_at desc);
+insert into users(phone,password_hash,nickname,role,points) values ('13800138000','$2a$12$Ayhiu1j7k4sW64sos2eOkO7pefn93C3YCPK0VDFcoVPdvqX3dfehq','故事星球超级管理员','admin',0) on conflict(phone) do update set role='admin';

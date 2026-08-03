@@ -31,7 +31,7 @@ jobs:
 
       - name: Upload release
         run: |
-          tar czf /tmp/yoyostory-release.tgz index.html styles.css app.js auth.css backend
+          tar czf /tmp/yoyostory-release.tgz index.html styles.css app.js auth.css admin.html admin.css admin.js backend
           scp -P "${{ secrets.DEPLOY_PORT || 22 }}" -i ~/.ssh/yoyostory_deploy /tmp/yoyostory-release.tgz \
             "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/tmp/yoyostory-release.tgz"
 
@@ -46,7 +46,7 @@ jobs:
           rm -rf "$release_dir"
           mkdir -p "$release_dir" "$DEPLOY_PATH/backend"
           tar xzf /tmp/yoyostory-release.tgz -C "$release_dir"
-          cp "$release_dir/index.html" "$release_dir/styles.css" "$release_dir/app.js" "$release_dir/auth.css" "$DEPLOY_PATH/"
+          cp "$release_dir/index.html" "$release_dir/styles.css" "$release_dir/app.js" "$release_dir/auth.css" "$release_dir/admin.html" "$release_dir/admin.css" "$release_dir/admin.js" "$DEPLOY_PATH/"
           rm -rf "$DEPLOY_PATH/backend/src"
           cp -R "$release_dir/backend/src" "$DEPLOY_PATH/backend/src"
           cp "$release_dir/backend/package.json" "$DEPLOY_PATH/backend/package.json"
