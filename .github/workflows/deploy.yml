@@ -54,7 +54,7 @@ jobs:
           set -a
           . ./.env
           set +a
-          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f schema.sql
+          sudo -u postgres psql -d yoyostory -v ON_ERROR_STOP=1 -f schema.sql
           npm install --omit=dev --no-audit --no-fund
           printf '\nRELEASE_SHA=%s\n' "$RELEASE_SHA" >> .env
           pm2 restart yoyostory-api --update-env

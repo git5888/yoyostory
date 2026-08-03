@@ -7,6 +7,14 @@ create table if not exists stories (id uuid primary key default gen_random_uuid(
 create table if not exists story_audio (id uuid primary key default gen_random_uuid(), story_id uuid not null references stories(id) on delete cascade, voice_sample_id uuid references voice_samples(id) on delete set null, system_voice_id uuid references system_voices(id) on delete set null, audio_url text, format varchar(10) not null default 'mp3', status varchar(20) not null default 'pending', duration numeric(8,2), created_at timestamptz not null default now());
 create table if not exists points_log (id uuid primary key default gen_random_uuid(), user_id uuid not null references users(id) on delete cascade, change_type varchar(40) not null, amount numeric(12,2) not null, balance_after numeric(12,2) not null, tokens_consumed bigint, story_id uuid references stories(id) on delete set null, remark text, created_at timestamptz not null default now());
 create table if not exists checkin_records (id uuid primary key default gen_random_uuid(), user_id uuid not null references users(id) on delete cascade, checkin_date date not null, consecutive_days int not null default 1, points_earned numeric(12,2) not null default 3, unique(user_id, checkin_date));
+alter table users owner to yoyostory;
+alter table children_profiles owner to yoyostory;
+alter table voice_samples owner to yoyostory;
+alter table system_voices owner to yoyostory;
+alter table stories owner to yoyostory;
+alter table story_audio owner to yoyostory;
+alter table points_log owner to yoyostory;
+alter table checkin_records owner to yoyostory;
 insert into system_voices(name,description,category,sort_order) values ('温柔妈妈','温暖轻柔，适合睡前故事','睡前',1),('活泼姐姐','明亮活泼，节奏感强','冒险',2),('知性阿姨','清晰知性，娓娓道来','科普',3),('暖心爸爸','低沉温暖，亲和力强','陪伴',4),('阳光哥哥','朝气蓬勃，感染力强','励志',5),('智慧爷爷','沉稳睿智，语重心长','知识',6),('小星星（女童）','奶声奶气，适合低龄','低龄',7),('小月亮（女童）','清亮灵动，活泼可爱','儿童',8),('小太阳（男童）','元气憨态可掬','儿童',9),('小勇士（男童）','沉稳勇敢，冒险故事','冒险',10),('绘本旁白','标准普通话，全场景','旁白',11) on conflict(name) do nothing;
 create index if not exists stories_user_created_idx on stories(user_id, created_at desc);
 create index if not exists points_log_user_created_idx on points_log(user_id, created_at desc);
