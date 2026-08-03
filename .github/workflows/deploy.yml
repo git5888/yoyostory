@@ -1,0 +1,73 @@
+name: Deploy yoyostory
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: yoyostory-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate JavaScript
+        run: |
+          node --check app.js
+          node --check backend/src/server.js
+
+      - name: Configure SSH
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/yoyostory_deploy
+          chmod 600 ~/.ssh/yoyostory_deploy
+          ssh-keyscan -p "${{ secrets.DEPLOY_PORT || 22 }}" "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts
+
+      - name: Upload release
+        run: |
+          tar czf /tmp/yoyostory-release.tgz index.html styles.css app.js auth.css backend
+          scp -P "${{ secrets.DEPLOY_PORT || 22 }}" -i ~/.ssh/yoyostory_deploy /tmp/yoyostory-release.tgz \
+            "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/tmp/yoyostory-release.tgz"
+
+      - name: Install and restart production
+        env:
+          RELEASE_SHA: ${{ github.sha }}
+        run: |
+          ssh -p "${{ secrets.DEPLOY_PORT || 22 }}" -i ~/.ssh/yoyostory_deploy "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
+            "RELEASE_SHA=$RELEASE_SHA DEPLOY_PATH='${{ secrets.DEPLOY_PATH || '/var/www/yoyostory' }}' bash -s" <<'REMOTE'
+          set -euo pipefail
+          release_dir=/tmp/yoyostory-release-${RELEASE_SHA}
+          rm -rf "$release_dir"
+          mkdir -p "$release_dir" "$DEPLOY_PATH/backend"
+          tar xzf /tmp/yoyostory-release.tgz -C "$release_dir"
+          cp "$release_dir/index.html" "$release_dir/styles.css" "$release_dir/app.js" "$release_dir/auth.css" "$DEPLOY_PATH/"
+          cp "$release_dir/backend/src/server.js" "$DEPLOY_PATH/backend/src/server.js"
+          cp "$release_dir/backend/package.json" "$DEPLOY_PATH/backend/package.json"
+          cp "$release_dir/backend/schema.sql" "$DEPLOY_PATH/backend/schema.sql"
+          cd "$DEPLOY_PATH/backend"
+          set -a
+          . ./.env
+          set +a
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f schema.sql
+          npm install --omit=dev --no-audit --no-fund
+          printf '\nRELEASE_SHA=%s\n' "$RELEASE_SHA" >> .env
+          pm2 restart yoyostory-api --update-env
+          pm2 save
+          nginx -t
+          systemctl reload nginx
+          rm -rf "$release_dir" /tmp/yoyostory-release.tgz
+          REMOTE
+
+      - name: Verify deployed site
+        env:
+          RELEASE_SHA: ${{ github.sha }}
+        run: |
+          test "$(curl -fsS https://ting.ywjs.com/api/health | grep -o '"release":"[^"]*"' | cut -d'"' -f4)" = "$RELEASE_SHA"
+          curl -fsS https://ting.ywjs.com/ | grep -q '故事星球'
+          curl -fsS https://ting.ywjs.com/app.js | grep -q 'openAuth'
