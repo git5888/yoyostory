@@ -1,0 +1,14 @@
+{
+  "name": "story-planet-web",
+  "private": true,
+  "scripts": { "dev": "next dev", "build": "next build", "start": "next start", "lint": "next lint" },
+  "dependencies": {
+    "@react-three/fiber": "^9.1.2",
+    "framer-motion": "^12.6.2",
+    "next": "^15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.174.0",
+    "wavesurfer.js": "^7.9.6"
+  }
+}
