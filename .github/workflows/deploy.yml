@@ -52,10 +52,11 @@ jobs:
           cp "$release_dir/backend/package.json" "$DEPLOY_PATH/backend/package.json"
           cp "$release_dir/backend/schema.sql" "$DEPLOY_PATH/backend/schema.sql"
           cd "$DEPLOY_PATH/backend"
+          release_sha="$RELEASE_SHA"
           set -a
           . ./.env
           set +a
-          export RELEASE_SHA
+          export RELEASE_SHA="$release_sha"
           sudo -u postgres psql -d yoyostory -v ON_ERROR_STOP=1 -f schema.sql
           npm install --omit=dev --no-audit --no-fund
           printf '\nRELEASE_SHA=%s\n' "$RELEASE_SHA" >> .env
