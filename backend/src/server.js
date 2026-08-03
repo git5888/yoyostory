@@ -1,0 +1,36 @@
+import 'dotenv/config';
+import express from 'express';
+import helmet from 'helmet';
+import cors from 'cors';
+import rateLimit from 'express-rate-limit';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import multer from 'multer';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import pg from 'pg';
+const { Pool } = pg;
+const app = express();
+const port = Number(process.env.PORT || 4101);
+const pool = new Pool({ connectionString: process.env.DATABASE_URL, max: 10, idleTimeoutMillis: 30000 });
+const uploadDir = process.env.UPLOAD_DIR || path.join(process.cwd(), 'uploads'); fs.mkdirSync(uploadDir, { recursive: true });
+app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } })); app.use(cors({ origin: process.env.WEB_ORIGIN || '*', credentials: true })); app.use(express.json({ limit: '1mb' }));
+app.use('/api/', rateLimit({ windowMs: 60 * 1000, limit: 100, standardHeaders: true, legacyHeaders: false }));
+const upload = multer({ dest: uploadDir, limits: { fileSize: 50 * 1024 * 1024 }, fileFilter: (_, file, cb) => cb(null, /^(audio|video)\//.test(file.mimetype)) });
+const sign = user => jwt.sign({ sub: user.id, phone: user.phone }, process.env.JWT_SECRET, { expiresIn: '15m' });
+function auth(req,res,next){try{const token=(req.headers.authorization||'').replace('Bearer ','');req.user=jwt.verify(token,process.env.JWT_SECRET);next()}catch{res.status(401).json({error:'登录已过期，请重新登录'})}}
+async function tx(fn){const c=await pool.connect();try{await c.query('begin');const out=await fn(c);await c.query('commit');return out}catch(e){await c.query('rollback');throw e}finally{c.release()}}
+app.get('/api/health', async (_,res)=>{try{await pool.query('select 1');res.json({ok:true,service:'yoyostory-api'})}catch{res.status(503).json({ok:false})}});
+app.post('/api/auth/register', async (req,res)=>{const {phone,password,nickname='故事星球用户'}=req.body||{};if(!/^1\d{10}$/.test(phone||'')||!password||password.length<8)return res.status(400).json({error:'手机号或密码格式不正确'});try{const hash=await bcrypt.hash(password,12);const {rows}=await pool.query('insert into users(phone,password_hash,nickname) values($1,$2,$3) returning id,phone,nickname,points',[phone,hash,nickname]);res.status(201).json({token:sign(rows[0]),user:rows[0]})}catch(e){res.status(e.code==='23505'?409:500).json({error:e.code==='23505'?'手机号已注册':'注册失败'})}});
+app.post('/api/auth/login', async (req,res)=>{const {phone,password}=req.body||{};const {rows}=await pool.query('select id,phone,nickname,points,password_hash,is_banned from users where phone=$1',[phone]);const u=rows[0];if(!u||u.is_banned||!(await bcrypt.compare(password||'',u.password_hash)))return res.status(401).json({error:'手机号或密码错误'});delete u.password_hash;res.json({token:sign(u),user:u})});
+app.get('/api/me',auth,async(req,res)=>{const {rows}=await pool.query('select id,phone,nickname,points,created_at from users where id=$1',[req.user.sub]);res.json(rows[0]||null)});
+app.get('/api/voices/system',async(_,res)=>{const {rows}=await pool.query('select id,name,description,category,demo_url from system_voices where is_active=true order by sort_order');res.json(rows)});
+app.get('/api/voices',auth,async(req,res)=>{const {rows}=await pool.query('select id,name,file_url,duration,quality_score,is_default,status,created_at from voice_samples where user_id=$1 order by created_at desc',[req.user.sub]);res.json(rows)});
+app.post('/api/voices/upload',auth,upload.single('audio'),async(req,res)=>{if(!req.file)return res.status(400).json({error:'请上传音频文件'});const count=await pool.query('select count(*) from voice_samples where user_id=$1',[req.user.sub]);if(Number(count.rows[0].count)>=5){fs.unlinkSync(req.file.path);return res.status(409).json({error:'最多保存5组声音样本'})}const {rows}=await pool.query('insert into voice_samples(user_id,name,file_url,quality_score) values($1,$2,$3,$4) returning *',[req.user.sub,req.body.name||'我的声音样本',`/uploads/${req.file.filename}`,92]);res.status(201).json(rows[0])});
+app.get('/api/stories',auth,async(req,res)=>{const {rows}=await pool.query('select id,title,content,age_range,style,tags,status,is_public,view_count,like_count,created_at,updated_at from stories where user_id=$1 order by updated_at desc',[req.user.sub]);res.json(rows)});
+app.post('/api/stories',auth,async(req,res)=>{const {title,content,ageRange='3–6岁',style='温馨睡前',tags=[]}=req.body||{};if(!title||!content)return res.status(400).json({error:'标题和正文不能为空'});const {rows}=await pool.query('insert into stories(user_id,title,content,age_range,style,tags) values($1,$2,$3,$4,$5,$6) returning *',[req.user.sub,title,content,ageRange,style,tags]);res.status(201).json(rows[0])});
+app.patch('/api/stories/:id',auth,async(req,res)=>{const {title,content,status,isPublic}=req.body;const {rows}=await pool.query('update stories set title=coalesce($1,title),content=coalesce($2,content),status=coalesce($3,status),is_public=coalesce($4,is_public),updated_at=now() where id=$5 and user_id=$6 returning *',[title,content,status,isPublic,req.params.id,req.user.sub]);if(!rows[0])return res.status(404).json({error:'作品不存在'});res.json(rows[0])});
+app.post('/api/checkins',auth,async(req,res)=>{try{const out=await tx(async c=>{const old=await c.query('select consecutive_days from checkin_records where user_id=$1 order by checkin_date desc limit 1',[req.user.sub]);const days=(old.rows[0]?.consecutive_days||0)+1;const earned=days%7===0?10:3;const r=await c.query('insert into checkin_records(user_id,checkin_date,consecutive_days,points_earned) values($1,current_date,$2,$3) returning *',[req.user.sub,days,earned]);const u=await c.query('update users set points=points+$1 where id=$2 returning points',[earned,req.user.sub]);await c.query('insert into points_log(user_id,change_type,amount,balance_after,remark) values($1,$2,$3,$4,$5)',[req.user.sub,'daily_checkin',earned,u.rows[0].points,'每日签到']);return {record:r.rows[0],balance:u.rows[0].points}});res.json(out)}catch(e){res.status(e.code==='23505'?409:500).json({error:e.code==='23505'?'今天已经签到':'签到失败'})}});
+app.use('/uploads',express.static(uploadDir)); app.use((err,req,res,next)=>{console.error(err);res.status(500).json({error:'服务暂时不可用'})});
+app.listen(port,'127.0.0.1',()=>console.log(`yoyostory api listening on ${port}`));
