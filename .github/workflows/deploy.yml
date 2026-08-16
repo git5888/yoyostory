@@ -38,9 +38,13 @@ jobs:
       - name: Install and restart production
         env:
           RELEASE_SHA: ${{ github.sha }}
+          ALIYUN_ACCESS_KEY_ID: ${{ secrets.ALIYUN_ACCESS_KEY_ID }}
+          ALIYUN_ACCESS_KEY_SECRET: ${{ secrets.ALIYUN_ACCESS_KEY_SECRET }}
+          ALIYUN_SMS_SIGN_NAME: ${{ secrets.ALIYUN_SMS_SIGN_NAME }}
+          ALIYUN_SMS_TEMPLATE_CODE: ${{ secrets.ALIYUN_SMS_TEMPLATE_CODE }}
         run: |
           ssh -p "${{ secrets.DEPLOY_PORT || 22 }}" -i ~/.ssh/yoyostory_deploy "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
-            "RELEASE_SHA=$RELEASE_SHA DEPLOY_PATH='${{ secrets.DEPLOY_PATH || '/var/www/yoyostory' }}' bash -s" <<'REMOTE'
+            "RELEASE_SHA=$RELEASE_SHA DEPLOY_PATH='${{ secrets.DEPLOY_PATH || '/var/www/yoyostory' }}' ALIYUN_ACCESS_KEY_ID='$ALIYUN_ACCESS_KEY_ID' ALIYUN_ACCESS_KEY_SECRET='$ALIYUN_ACCESS_KEY_SECRET' ALIYUN_SMS_SIGN_NAME='$ALIYUN_SMS_SIGN_NAME' ALIYUN_SMS_TEMPLATE_CODE='$ALIYUN_SMS_TEMPLATE_CODE' bash -s" <<'REMOTE'
           set -euo pipefail
           release_dir=/tmp/yoyostory-release-${RELEASE_SHA}
           rm -rf "$release_dir"
@@ -53,6 +57,11 @@ jobs:
           cp "$release_dir/backend/schema.sql" "$DEPLOY_PATH/backend/schema.sql"
           cd "$DEPLOY_PATH/backend"
           release_sha="$RELEASE_SHA"
+          set -a
+          . ./.env
+          set +a
+          sed -i '/^ALIYUN_ACCESS_KEY_ID=/d;/^ALIYUN_ACCESS_KEY_SECRET=/d;/^ALIYUN_SMS_SIGN_NAME=/d;/^ALIYUN_SMS_TEMPLATE_CODE=/d' .env
+          printf 'ALIYUN_ACCESS_KEY_ID=%s\nALIYUN_ACCESS_KEY_SECRET=%s\nALIYUN_SMS_SIGN_NAME=%s\nALIYUN_SMS_TEMPLATE_CODE=%s\n' "$ALIYUN_ACCESS_KEY_ID" "$ALIYUN_ACCESS_KEY_SECRET" "$ALIYUN_SMS_SIGN_NAME" "$ALIYUN_SMS_TEMPLATE_CODE" >> .env
           set -a
           . ./.env
           set +a
