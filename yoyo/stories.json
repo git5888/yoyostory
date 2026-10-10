@@ -1,0 +1,82 @@
+[
+  {
+    "title": "小兔子的另一只袜子",
+    "seconds": 80.1,
+    "audio": "/yoyo/audio/story-01.mp3",
+    "icon": "🐰",
+    "note": "两只小袜子，找到彼此。",
+    "theme": "配对与观察"
+  },
+  {
+    "title": "小熊的三块积木",
+    "seconds": 83.7,
+    "audio": "/yoyo/audio/story-02.mp3",
+    "icon": "🐻",
+    "note": "试一试，搭起稳稳的小房子。",
+    "theme": "顺序与尝试"
+  },
+  {
+    "title": "小象把声音放轻了",
+    "seconds": 79.1,
+    "audio": "/yoyo/audio/story-03.mp3",
+    "icon": "🐘",
+    "note": "小小的晚安，轻轻地说。",
+    "theme": "倾听与轻声表达"
+  },
+  {
+    "title": "小狐狸和小雨点",
+    "seconds": 86.1,
+    "audio": "/yoyo/audio/story-04.mp3",
+    "icon": "🦊",
+    "note": "雨点在窗外，温暖在身边。",
+    "theme": "简单因果"
+  },
+  {
+    "title": "小猫有一点舍不得",
+    "seconds": 89.8,
+    "audio": "/yoyo/audio/story-05.mp3",
+    "icon": "🐱",
+    "note": "舍不得的时候，抱一抱。",
+    "theme": "感受与安慰"
+  },
+  {
+    "title": "小鸭和三个小碗",
+    "seconds": 83.8,
+    "audio": "/yoyo/audio/story-06.mp3",
+    "icon": "🦆",
+    "note": "一个小碗，配一把小勺子。",
+    "theme": "一一对应"
+  },
+  {
+    "title": "小松鼠的明天篮子",
+    "seconds": 90.7,
+    "audio": "/yoyo/audio/story-07.mp3",
+    "icon": "🐿️",
+    "note": "好奇心留给明天，今晚先休息。",
+    "theme": "好奇与安心"
+  },
+  {
+    "title": "小狗找到了小铃铛",
+    "seconds": 81.2,
+    "audio": "/yoyo/audio/story-08.mp3",
+    "icon": "🐶",
+    "note": "想一想，铃铛在哪里？",
+    "theme": "回忆与寻找"
+  },
+  {
+    "title": "小企鹅自己试一试",
+    "seconds": 88.9,
+    "audio": "/yoyo/audio/story-09.mp3",
+    "icon": "🐧",
+    "note": "自己试一试，也可以找人帮忙。",
+    "theme": "尝试与求助"
+  },
+  {
+    "title": "小鹿的小路走完了",
+    "seconds": 95.1,
+    "audio": "/yoyo/audio/story-10.mp3",
+    "icon": "🦌",
+    "note": "收好玩具，收好今天的温暖。",
+    "theme": "睡前常规"
+  }
+]
