@@ -1,0 +1,212 @@
+[
+  {
+    "title": "小兔子和池塘的朋友",
+    "seconds": 112.5,
+    "audio": "/yoyo/audio/english-11.mp3",
+    "icon": "🐰",
+    "words": [
+      [
+        "rabbit",
+        "兔子"
+      ],
+      [
+        "fish",
+        "鱼"
+      ],
+      [
+        "bird",
+        "鸟"
+      ]
+    ],
+    "sha256": "ad9a8be4981b076b088396d1607d1d40b2b8435dbbd091194742b82dea28b068"
+  },
+  {
+    "title": "小熊的穿衣小队",
+    "seconds": 103.1,
+    "audio": "/yoyo/audio/english-12.mp3",
+    "icon": "👕",
+    "words": [
+      [
+        "shirt",
+        "衬衫"
+      ],
+      [
+        "pants",
+        "裤子"
+      ],
+      [
+        "shoes",
+        "鞋子"
+      ]
+    ],
+    "sha256": "0ed704501c294b4e96a8bad499555c87b2ad47e7ca01137fad3bd36fa6585f38"
+  },
+  {
+    "title": "窗外的小天气",
+    "seconds": 102.9,
+    "audio": "/yoyo/audio/english-13.mp3",
+    "icon": "🌧️",
+    "words": [
+      [
+        "rain",
+        "雨"
+      ],
+      [
+        "wind",
+        "风"
+      ],
+      [
+        "snow",
+        "雪"
+      ]
+    ],
+    "sha256": "ef171f360e004aba2252026d54b24950632e6899d065693c3b3e012eab4c5e1e"
+  },
+  {
+    "title": "小鸭的香香晚饭",
+    "seconds": 101.1,
+    "audio": "/yoyo/audio/english-14.mp3",
+    "icon": "🍚",
+    "words": [
+      [
+        "bread",
+        "面包"
+      ],
+      [
+        "egg",
+        "鸡蛋"
+      ],
+      [
+        "rice",
+        "米饭"
+      ]
+    ],
+    "sha256": "5be4ecc19df0dfe84e8b48aa72d1bf36c567e7df9dbb42acb7b6181f08f63068"
+  },
+  {
+    "title": "小猫身体的早安舞",
+    "seconds": 99.9,
+    "audio": "/yoyo/audio/english-15.mp3",
+    "icon": "🐱",
+    "words": [
+      [
+        "head",
+        "头"
+      ],
+      [
+        "hands",
+        "双手"
+      ],
+      [
+        "feet",
+        "双脚"
+      ]
+    ],
+    "sha256": "ad90e8f94cf22af022f277b8db020514740fc3c82fcc336fbade2e91f47db0e5"
+  },
+  {
+    "title": "小企鹅给玩偶找座位",
+    "seconds": 101.1,
+    "audio": "/yoyo/audio/english-16.mp3",
+    "icon": "🛏️",
+    "words": [
+      [
+        "bed",
+        "床"
+      ],
+      [
+        "chair",
+        "椅子"
+      ],
+      [
+        "table",
+        "桌子"
+      ]
+    ],
+    "sha256": "28ef17d168c5e9a8103c865a983199f810eeb4647314664aa3dbc1d0a7068861"
+  },
+  {
+    "title": "小鹿的小花园",
+    "seconds": 95.9,
+    "audio": "/yoyo/audio/english-17.mp3",
+    "icon": "🌷",
+    "words": [
+      [
+        "flower",
+        "花"
+      ],
+      [
+        "tree",
+        "树"
+      ],
+      [
+        "leaf",
+        "叶子"
+      ]
+    ],
+    "sha256": "c9fe1c112a85ca8cb2e13eb7ac4608c346fb7d3945d5ad76a1003ab28985691c"
+  },
+  {
+    "title": "小兔子的三张动作卡",
+    "seconds": 100.4,
+    "audio": "/yoyo/audio/english-18.mp3",
+    "icon": "🐰",
+    "words": [
+      [
+        "walk",
+        "走"
+      ],
+      [
+        "jump",
+        "跳"
+      ],
+      [
+        "sit",
+        "坐"
+      ]
+    ],
+    "sha256": "d02d76f6b5213b5865f7c5b2b4c0492d2ea7cb66398a6fc40e387142afbfee05"
+  },
+  {
+    "title": "悠悠的小心情",
+    "seconds": 105.4,
+    "audio": "/yoyo/audio/english-19.mp3",
+    "icon": "🤗",
+    "words": [
+      [
+        "happy",
+        "开心"
+      ],
+      [
+        "sad",
+        "难过"
+      ],
+      [
+        "tired",
+        "疲倦"
+      ]
+    ],
+    "sha256": "c4f742c780c7d719d0d2fb65cbfd61e0b82ae30f254d751de7e8f198adc2ce92"
+  },
+  {
+    "title": "小熊的玩偶在哪里",
+    "seconds": 102.4,
+    "audio": "/yoyo/audio/english-20.mp3",
+    "icon": "🧸",
+    "words": [
+      [
+        "in",
+        "里面"
+      ],
+      [
+        "on",
+        "上面"
+      ],
+      [
+        "under",
+        "下面"
+      ]
+    ],
+    "sha256": "a1c9bb659f728f47049fa8fe4d5a7479fbbde242718bf8c8cd151d9162402ae8"
+  }
+]

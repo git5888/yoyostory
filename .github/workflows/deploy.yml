@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Validate JavaScript
         run: |
@@ -31,8 +33,16 @@ jobs:
           ssh-keyscan -p "${{ secrets.DEPLOY_PORT || 22 }}" "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts
 
       - name: Upload release
+        env:
+          RELEASE_BASE_SHA: ${{ github.event.before }}
         run: |
-          tar czf /tmp/yoyostory-release.tgz index.html styles.css app.js auth.css admin.html admin.css admin.js account.html account.css account.js voice-preview.js voice-recorder.js yoyo backend
+          git ls-files -z -- yoyo ':!yoyo/audio/*' > /tmp/yoyo-release-files
+          if [ -n "$RELEASE_BASE_SHA" ] && git cat-file -e "$RELEASE_BASE_SHA^{commit}" 2>/dev/null; then
+            git diff --name-only --diff-filter=ACMR -z "$RELEASE_BASE_SHA" "$GITHUB_SHA" -- yoyo/audio/ >> /tmp/yoyo-release-files
+          else
+            git ls-files -z -- yoyo/audio/ >> /tmp/yoyo-release-files
+          fi
+          tar czf /tmp/yoyostory-release.tgz index.html styles.css app.js auth.css admin.html admin.css admin.js account.html account.css account.js voice-preview.js voice-recorder.js backend --null -T /tmp/yoyo-release-files
           scp -P "${{ secrets.DEPLOY_PORT || 22 }}" -i ~/.ssh/yoyostory_deploy /tmp/yoyostory-release.tgz \
             "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/tmp/yoyostory-release.tgz"
 
@@ -89,5 +99,9 @@ jobs:
           curl -fsS https://ting.ywjs.com/yoyo/ | grep -q '爸爸陪我学英语'
           for story in $(seq -w 1 10); do
             curl -fsSI "https://ting.ywjs.com/yoyo/audio/story-$story.mp3" | grep -qi 'content-type: audio/mpeg'
+            curl -fsSI "https://ting.ywjs.com/yoyo/audio/english-$story.mp3" | grep -qi 'content-type: audio/mpeg'
+          done
+          curl -fsS https://ting.ywjs.com/yoyo/ | grep -q '学英语第二辑'
+          for story in $(seq 11 20); do
             curl -fsSI "https://ting.ywjs.com/yoyo/audio/english-$story.mp3" | grep -qi 'content-type: audio/mpeg'
           done

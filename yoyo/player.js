@@ -5,7 +5,7 @@ const statusText = document.getElementById('status');
 const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
 const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
 function selectCollection(name, focus = false) {
-  if (!panels.some(panel => panel.dataset.collection === name)) name = 'english';
+  if (!panels.some(panel => panel.dataset.collection === name)) name = 'english2';
   players.forEach(player => player.pause());
   tabs.forEach(tab => {
     const selected = tab.dataset.collection === name;
@@ -14,7 +14,7 @@ function selectCollection(name, focus = false) {
     if (selected && focus) tab.focus();
   });
   panels.forEach(panel => { panel.hidden = panel.dataset.collection !== name; });
-  statusText.textContent = name === 'english' ? '爸爸陪我学英语：选一个故事，轻点播放。' : '睡前故事：选一个故事，轻点播放。';
+  statusText.textContent = name === 'english2' ? '爸爸陪我学英语第二辑：选一个故事，轻点播放。' : name === 'english' ? '爸爸陪我学英语：选一个故事，轻点播放。' : '睡前故事：选一个故事，轻点播放。';
 }
 tabs.forEach((tab, index) => {
   tab.addEventListener('click', () => {
@@ -39,12 +39,12 @@ players.forEach(player => {
     card.classList.add('playing');
     statusText.textContent = `正在播放：${title}`;
     if ('mediaSession' in navigator && typeof MediaMetadata !== 'undefined') {
-      navigator.mediaSession.metadata = new MediaMetadata({ title, artist: '悠悠 · 故事时光', album: panel.dataset.collection === 'english' ? '爸爸陪我学英语' : '宝宝的温柔睡前故事' });
+      navigator.mediaSession.metadata = new MediaMetadata({ title, artist: '悠悠 · 故事时光', album: panel.dataset.collection === 'english2' ? '爸爸陪我学英语第二辑' : panel.dataset.collection === 'english' ? '爸爸陪我学英语' : '宝宝的温柔睡前故事' });
     }
   });
   player.addEventListener('pause', () => {
     card.classList.remove('playing');
-    if (!player.ended && players.every(item => item.paused)) statusText.textContent = `已暂停：${title}`;
+    if (!panel.hidden && !player.ended && players.every(item => item.paused)) statusText.textContent = `已暂停：${title}`;
   });
   player.addEventListener('ended', async () => {
     card.classList.remove('playing');
@@ -60,4 +60,4 @@ players.forEach(player => {
   });
   player.addEventListener('error', () => { statusText.textContent = '故事暂时加载失败，请检查网络后刷新页面重试。'; });
 });
-selectCollection(location.hash.slice(1) || 'english');
+selectCollection(location.hash.slice(1) || 'english2');
