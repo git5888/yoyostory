@@ -86,6 +86,8 @@ jobs:
           curl -fsS https://ting.ywjs.com/ | grep -q '故事星球'
           curl -fsS https://ting.ywjs.com/app.js | grep -q 'openAuth'
           curl -fsS https://ting.ywjs.com/yoyo/ | grep -q '宝宝的晚安故事'
+          curl -fsS https://ting.ywjs.com/yoyo/ | grep -q '爸爸陪我学英语'
           for story in $(seq -w 1 10); do
             curl -fsSI "https://ting.ywjs.com/yoyo/audio/story-$story.mp3" | grep -qi 'content-type: audio/mpeg'
+            curl -fsSI "https://ting.ywjs.com/yoyo/audio/english-$story.mp3" | grep -qi 'content-type: audio/mpeg'
           done

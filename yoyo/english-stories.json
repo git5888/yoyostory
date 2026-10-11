@@ -1,0 +1,212 @@
+[
+  {
+    "title": "小兔子的水果篮",
+    "seconds": 108.1,
+    "audio": "/yoyo/audio/english-01.mp3",
+    "icon": "🐰",
+    "words": [
+      [
+        "apple",
+        "苹果"
+      ],
+      [
+        "banana",
+        "香蕉"
+      ],
+      [
+        "orange",
+        "橙子"
+      ]
+    ],
+    "sha256": "d492a9de5d4f01a3cb00532405d8c8b465171c00e5fca650c37a21dea1765f73"
+  },
+  {
+    "title": "小熊找颜色",
+    "seconds": 95.2,
+    "audio": "/yoyo/audio/english-02.mp3",
+    "icon": "🐻",
+    "words": [
+      [
+        "red",
+        "红色"
+      ],
+      [
+        "yellow",
+        "黄色"
+      ],
+      [
+        "blue",
+        "蓝色"
+      ]
+    ],
+    "sha256": "ba8890d79cd5fe5bade4e8ee998b2eacaed60ba3f26059df02068b6103d5fdce"
+  },
+  {
+    "title": "门边来了谁",
+    "seconds": 107.9,
+    "audio": "/yoyo/audio/english-03.mp3",
+    "icon": "🐱",
+    "words": [
+      [
+        "cat",
+        "猫"
+      ],
+      [
+        "dog",
+        "狗"
+      ],
+      [
+        "duck",
+        "鸭子"
+      ]
+    ],
+    "sha256": "14b76d2bc03c15894024521b8e3ea90c5479b0c49718ab6ca2c48be8014122c1"
+  },
+  {
+    "title": "小熊洗洗脸",
+    "seconds": 102.3,
+    "audio": "/yoyo/audio/english-04.mp3",
+    "icon": "🐻",
+    "words": [
+      [
+        "eyes",
+        "眼睛"
+      ],
+      [
+        "nose",
+        "鼻子"
+      ],
+      [
+        "mouth",
+        "嘴巴"
+      ]
+    ],
+    "sha256": "03a37b9ed6721ad8b290358a64815b26568323b466e34d30b97c66b09ee1c196"
+  },
+  {
+    "title": "太阳休息，月亮来了",
+    "seconds": 117.7,
+    "audio": "/yoyo/audio/english-05.mp3",
+    "icon": "🌙",
+    "words": [
+      [
+        "sun",
+        "太阳"
+      ],
+      [
+        "moon",
+        "月亮"
+      ],
+      [
+        "star",
+        "星星"
+      ]
+    ],
+    "sha256": "643a5876b6d42a66f768a856b67741281ac7e026f71d965f4c9f2dda771f75f5"
+  },
+  {
+    "title": "小兔子的玩具回家啦",
+    "seconds": 102.5,
+    "audio": "/yoyo/audio/english-06.mp3",
+    "icon": "🐰",
+    "words": [
+      [
+        "ball",
+        "球"
+      ],
+      [
+        "car",
+        "汽车"
+      ],
+      [
+        "bear",
+        "熊"
+      ]
+    ],
+    "sha256": "b537e70cbb39fec60e9664749b1495e80fdc0fd9f2c1ada8b78f63c91ffcae2a"
+  },
+  {
+    "title": "小鸭的两个小杯子",
+    "seconds": 96.6,
+    "audio": "/yoyo/audio/english-07.mp3",
+    "icon": "🦆",
+    "words": [
+      [
+        "water",
+        "水"
+      ],
+      [
+        "milk",
+        "牛奶"
+      ],
+      [
+        "cup",
+        "杯子"
+      ]
+    ],
+    "sha256": "b6fbd82ecf8bcbd3be979d80e3f8760c58c7f85ae786edd47883c8abfa6e6d62"
+  },
+  {
+    "title": "小企鹅打开小盒子",
+    "seconds": 100.3,
+    "audio": "/yoyo/audio/english-08.mp3",
+    "icon": "🐧",
+    "words": [
+      [
+        "open",
+        "打开"
+      ],
+      [
+        "close",
+        "关上"
+      ],
+      [
+        "book",
+        "书"
+      ]
+    ],
+    "sha256": "9a39db05138bf6c246d16a675cbd43d5624b805d17a7e3c9c3f11aebbadb357f"
+  },
+  {
+    "title": "小猫的大小枕头",
+    "seconds": 94.8,
+    "audio": "/yoyo/audio/english-09.mp3",
+    "icon": "🐱",
+    "words": [
+      [
+        "big",
+        "大的"
+      ],
+      [
+        "small",
+        "小的"
+      ],
+      [
+        "pillow",
+        "枕头"
+      ]
+    ],
+    "sha256": "3bfb20118f28ee4db02ab1cca2ae896c25ccaebf12b6e7aaac3e0cd9c49459c0"
+  },
+  {
+    "title": "悠悠的晚安抱抱",
+    "seconds": 106.4,
+    "audio": "/yoyo/audio/english-10.mp3",
+    "icon": "🤗",
+    "words": [
+      [
+        "hello",
+        "你好"
+      ],
+      [
+        "hug",
+        "拥抱"
+      ],
+      [
+        "goodnight",
+        "晚安"
+      ]
+    ],
+    "sha256": "316962c1dde9a29893878b2f0f420c2d29f85ed842ca149ee958adbb1a58cb3c"
+  }
+]
