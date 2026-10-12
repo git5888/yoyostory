@@ -1,0 +1,632 @@
+[
+  {
+    "title": "水果篮里的小香味",
+    "seconds": 75.7,
+    "audio": "/yoyo/audio/english-41.mp3",
+    "icon": "🍑",
+    "words": [
+      [
+        "peach",
+        "桃子"
+      ],
+      [
+        "strawberry",
+        "草莓"
+      ],
+      [
+        "lemon",
+        "柠檬"
+      ]
+    ],
+    "sha256": "208da5c657997eab39d9ef7b293134d25d89f7ebeb6446de9bf0969bea61491f"
+  },
+  {
+    "title": "菜篮里的三位朋友",
+    "seconds": 71.3,
+    "audio": "/yoyo/audio/english-42.mp3",
+    "icon": "🌽",
+    "words": [
+      [
+        "pumpkin",
+        "南瓜"
+      ],
+      [
+        "cucumber",
+        "黄瓜"
+      ],
+      [
+        "corn",
+        "玉米"
+      ]
+    ],
+    "sha256": "d203d6d7acead2e4e9936b61f029e0795a270bb09b7293d92c4066c51f5b64bb"
+  },
+  {
+    "title": "小碗里的柔软晚餐",
+    "seconds": 75.4,
+    "audio": "/yoyo/audio/english-43.mp3",
+    "icon": "🥣",
+    "words": [
+      [
+        "noodle",
+        "面条"
+      ],
+      [
+        "cheese",
+        "奶酪"
+      ],
+      [
+        "yogurt",
+        "酸奶"
+      ]
+    ],
+    "sha256": "56a7d9e08a74cdad1999d9722d4f8492a9f04830432cef3dd2ad6c1700c9d41c"
+  },
+  {
+    "title": "小雨后的花园来客",
+    "seconds": 75.0,
+    "audio": "/yoyo/audio/english-44.mp3",
+    "icon": "🐸",
+    "words": [
+      [
+        "frog",
+        "青蛙"
+      ],
+      [
+        "snail",
+        "蜗牛"
+      ],
+      [
+        "butterfly",
+        "蝴蝶"
+      ]
+    ],
+    "sha256": "6a3fccff475c0bc865332fbbff6bcb31707adc58f4c19849a7693d51e3a48901"
+  },
+  {
+    "title": "花旁边的忙碌小队",
+    "seconds": 76.0,
+    "audio": "/yoyo/audio/english-45.mp3",
+    "icon": "🐞",
+    "words": [
+      [
+        "bee",
+        "蜜蜂"
+      ],
+      [
+        "ant",
+        "蚂蚁"
+      ],
+      [
+        "ladybug",
+        "瓢虫"
+      ]
+    ],
+    "sha256": "0433ee89d7ceb8b77acb049644163ee5bab7b5a8e36383356be98467aeb330b1"
+  },
+  {
+    "title": "条纹和鬃毛的图画",
+    "seconds": 72.4,
+    "audio": "/yoyo/audio/english-46.mp3",
+    "icon": "🦁",
+    "words": [
+      [
+        "lion",
+        "狮子"
+      ],
+      [
+        "tiger",
+        "老虎"
+      ],
+      [
+        "zebra",
+        "斑马"
+      ]
+    ],
+    "sha256": "fc60d03ce660fcbcabe99c0bd1170de8c74e87cae5514d60a6a7bb8084769868"
+  },
+  {
+    "title": "海洋书里的大与小",
+    "seconds": 70.1,
+    "audio": "/yoyo/audio/english-47.mp3",
+    "icon": "🐬",
+    "words": [
+      [
+        "whale",
+        "鲸"
+      ],
+      [
+        "dolphin",
+        "海豚"
+      ],
+      [
+        "crab",
+        "螃蟹"
+      ]
+    ],
+    "sha256": "d3a11da3a6b989d2d565a3fa6615da8b88223a89c05891e17fd1129aac8b5ba5"
+  },
+  {
+    "title": "形状饼干的小队",
+    "seconds": 77.8,
+    "audio": "/yoyo/audio/english-48.mp3",
+    "icon": "🔺",
+    "words": [
+      [
+        "circle",
+        "圆形"
+      ],
+      [
+        "square",
+        "正方形"
+      ],
+      [
+        "triangle",
+        "三角形"
+      ]
+    ],
+    "sha256": "b8d81cc3bf6ee0c3e1061d5caa9700905ccd9c09b098e554f1c37522c51a8d5f"
+  },
+  {
+    "title": "玩偶的小颜色盒",
+    "seconds": 70.5,
+    "audio": "/yoyo/audio/english-49.mp3",
+    "icon": "🎨",
+    "words": [
+      [
+        "black",
+        "黑色"
+      ],
+      [
+        "white",
+        "白色"
+      ],
+      [
+        "brown",
+        "棕色"
+      ]
+    ],
+    "sha256": "37b88569333fd12c21056fd1b90de868ac5a18cc7133eee6b299dd1620cd1919"
+  },
+  {
+    "title": "小布的洗澡变化",
+    "seconds": 71.2,
+    "audio": "/yoyo/audio/english-50.mp3",
+    "icon": "💧",
+    "words": [
+      [
+        "wet",
+        "湿的"
+      ],
+      [
+        "dry",
+        "干的"
+      ],
+      [
+        "sticky",
+        "黏的"
+      ]
+    ],
+    "sha256": "86a921cd2a50e62a15bacfbe08f02c55a1674cb278e70a9923c397a7de40b103"
+  },
+  {
+    "title": "长颈鹿的两条围巾",
+    "seconds": 73.7,
+    "audio": "/yoyo/audio/english-51.mp3",
+    "icon": "🦒",
+    "words": [
+      [
+        "long",
+        "长的"
+      ],
+      [
+        "short",
+        "短的"
+      ],
+      [
+        "tall",
+        "高的"
+      ]
+    ],
+    "sha256": "3f8e18da30f13a8a73bf0336f4f4086eb09ebb3a3e89be8ff02d9011e3b2ab3d"
+  },
+  {
+    "title": "三张小椅子的座位",
+    "seconds": 72.6,
+    "audio": "/yoyo/audio/english-52.mp3",
+    "icon": "🪑",
+    "words": [
+      [
+        "left",
+        "左边"
+      ],
+      [
+        "right",
+        "右边"
+      ],
+      [
+        "middle",
+        "中间"
+      ]
+    ],
+    "sha256": "57e32eb917802e5e427fd9a5cf96a7ee90c1b69fc111d7581cf7e34981d364d6"
+  },
+  {
+    "title": "玩偶躲在哪里",
+    "seconds": 73.8,
+    "audio": "/yoyo/audio/english-53.mp3",
+    "icon": "📦",
+    "words": [
+      [
+        "behind",
+        "后面"
+      ],
+      [
+        "beside",
+        "旁边"
+      ],
+      [
+        "between",
+        "两者之间"
+      ]
+    ],
+    "sha256": "40ac1e8f0da7317e32aa99b5a4c764c5f2aa8911adf55efc7f5f04ee5af59cba"
+  },
+  {
+    "title": "装豆袋的小篮子",
+    "seconds": 70.8,
+    "audio": "/yoyo/audio/english-54.mp3",
+    "icon": "🧺",
+    "words": [
+      [
+        "empty",
+        "空的"
+      ],
+      [
+        "full",
+        "满的"
+      ],
+      [
+        "more",
+        "更多"
+      ]
+    ],
+    "sha256": "9cab048e4fe9ce4a3b0d212dbf1526e812f3233f525284bc7d700cdbbe68a15f"
+  },
+  {
+    "title": "一天的三张照片",
+    "seconds": 72.5,
+    "audio": "/yoyo/audio/english-55.mp3",
+    "icon": "🌅",
+    "words": [
+      [
+        "morning",
+        "早晨"
+      ],
+      [
+        "afternoon",
+        "下午"
+      ],
+      [
+        "night",
+        "夜晚"
+      ]
+    ],
+    "sha256": "3b971a93a00eed1fc7914c40c26683a825e8644cb5fb0ead8da52bfcfa372d6c"
+  },
+  {
+    "title": "玩具车的安静小路",
+    "seconds": 73.3,
+    "audio": "/yoyo/audio/english-56.mp3",
+    "icon": "🚙",
+    "words": [
+      [
+        "fast",
+        "快的"
+      ],
+      [
+        "slow",
+        "慢的"
+      ],
+      [
+        "quiet",
+        "安静的"
+      ]
+    ],
+    "sha256": "4c10b608ce60b09f2def190b5924fbacd66ee0d074192d6a4e678096d5471e4e"
+  },
+  {
+    "title": "舌尖上的三种味道",
+    "seconds": 72.1,
+    "audio": "/yoyo/audio/english-57.mp3",
+    "icon": "🍯",
+    "words": [
+      [
+        "sweet",
+        "甜的"
+      ],
+      [
+        "sour",
+        "酸的"
+      ],
+      [
+        "salty",
+        "咸的"
+      ]
+    ],
+    "sha256": "941595b1e6bb26d2133c847205c678b10cf1ca6e42bf36cbe67e8c2e30a6149f"
+  },
+  {
+    "title": "三样玩具的慢下午",
+    "seconds": 74.3,
+    "audio": "/yoyo/audio/english-58.mp3",
+    "icon": "🪁",
+    "words": [
+      [
+        "kite",
+        "风筝"
+      ],
+      [
+        "block",
+        "积木"
+      ],
+      [
+        "puzzle",
+        "拼图"
+      ]
+    ],
+    "sha256": "fdcca97cd94f1aff20da68cec40e20f806aef6a9c008e4d0c1733969183f8463"
+  },
+  {
+    "title": "小熊的纸上花园",
+    "seconds": 72.7,
+    "audio": "/yoyo/audio/english-59.mp3",
+    "icon": "🖍️",
+    "words": [
+      [
+        "paper",
+        "纸"
+      ],
+      [
+        "crayon",
+        "蜡笔"
+      ],
+      [
+        "glue",
+        "胶水"
+      ]
+    ],
+    "sha256": "8d8b3483bef07811a29f9baa3658fd2ebf89975405d2fe0c5cadc41f7719cbe9"
+  },
+  {
+    "title": "玩偶的软软小床",
+    "seconds": 75.0,
+    "audio": "/yoyo/audio/english-60.mp3",
+    "icon": "🛌",
+    "words": [
+      [
+        "mattress",
+        "床垫"
+      ],
+      [
+        "pajamas",
+        "睡衣"
+      ],
+      [
+        "blanket",
+        "毯子"
+      ]
+    ],
+    "sha256": "96c0f25855317cbf5b6e210474d5be50248e1744a442b621688139b199c0cc94"
+  },
+  {
+    "title": "镜子前的三处发现",
+    "seconds": 71.0,
+    "audio": "/yoyo/audio/english-61.mp3",
+    "icon": "🪞",
+    "words": [
+      [
+        "ears",
+        "耳朵"
+      ],
+      [
+        "teeth",
+        "牙齿"
+      ],
+      [
+        "hair",
+        "头发"
+      ]
+    ],
+    "sha256": "b781028832d9ec77859183dd51052738d132383f8d75617693d43b790346b1eb"
+  },
+  {
+    "title": "爸爸递来一张纸巾",
+    "seconds": 72.9,
+    "audio": "/yoyo/audio/english-62.mp3",
+    "icon": "🧻",
+    "words": [
+      [
+        "sneeze",
+        "打喷嚏"
+      ],
+      [
+        "cough",
+        "咳嗽"
+      ],
+      [
+        "tissue",
+        "纸巾"
+      ]
+    ],
+    "sha256": "d25464ecf9fef3ce733cb5d3b4fe852780e9c29deef0df01a2dd50fbd6854d27"
+  },
+  {
+    "title": "脚下的小小世界",
+    "seconds": 76.2,
+    "audio": "/yoyo/audio/english-63.mp3",
+    "icon": "🌿",
+    "words": [
+      [
+        "grass",
+        "草"
+      ],
+      [
+        "stone",
+        "石头"
+      ],
+      [
+        "sand",
+        "沙子"
+      ]
+    ],
+    "sha256": "92ba34d3de67c49521423132c1983f38ca5ed3956cabfbb7d80e04f9dfdbd98d"
+  },
+  {
+    "title": "公园的三个停靠点",
+    "seconds": 76.5,
+    "audio": "/yoyo/audio/english-64.mp3",
+    "icon": "🛝",
+    "words": [
+      [
+        "swing",
+        "秋千"
+      ],
+      [
+        "slide",
+        "滑梯"
+      ],
+      [
+        "bench",
+        "长椅"
+      ]
+    ],
+    "sha256": "e6e32b6f1ca0fb745c3f36893a4e7da9050875769f010bd2b021ec1bd9cffb60"
+  },
+  {
+    "title": "房间里的晚间朋友",
+    "seconds": 69.2,
+    "audio": "/yoyo/audio/english-65.mp3",
+    "icon": "💡",
+    "words": [
+      [
+        "lamp",
+        "灯"
+      ],
+      [
+        "clock",
+        "钟"
+      ],
+      [
+        "sofa",
+        "沙发"
+      ]
+    ],
+    "sha256": "840266aaab7a45c83965ef6abe60afbd5885f40e41d32a6ad7be2867dd0bf822"
+  },
+  {
+    "title": "小厨房的盖子朋友",
+    "seconds": 72.6,
+    "audio": "/yoyo/audio/english-66.mp3",
+    "icon": "🍲",
+    "words": [
+      [
+        "bowl",
+        "碗"
+      ],
+      [
+        "pot",
+        "锅"
+      ],
+      [
+        "lid",
+        "盖子"
+      ]
+    ],
+    "sha256": "f09bb7c6ad33737c65a6d3b257442e9328ae1b54d49eb4b5c0e040737a3db889"
+  },
+  {
+    "title": "玩具厨房的清洁队",
+    "seconds": 72.0,
+    "audio": "/yoyo/audio/english-67.mp3",
+    "icon": "🧽",
+    "words": [
+      [
+        "pour",
+        "倒"
+      ],
+      [
+        "stir",
+        "搅拌"
+      ],
+      [
+        "wipe",
+        "擦"
+      ]
+    ],
+    "sha256": "81b89086fee5b8719f6ba180bbd6b3b909956a21567da06ec6535b074cf508b6"
+  },
+  {
+    "title": "圆筒的小小旅程",
+    "seconds": 72.0,
+    "audio": "/yoyo/audio/english-68.mp3",
+    "icon": "🧻",
+    "words": [
+      [
+        "push",
+        "推"
+      ],
+      [
+        "pull",
+        "拉"
+      ],
+      [
+        "roll",
+        "滚"
+      ]
+    ],
+    "sha256": "52cad99469cfdf3ce63eb597952aee6c56a591ad69bfb0fecdba4cf3ca3a70ec"
+  },
+  {
+    "title": "小玩偶的礼貌茶会",
+    "seconds": 73.7,
+    "audio": "/yoyo/audio/english-69.mp3",
+    "icon": "💬",
+    "words": [
+      [
+        "please",
+        "请"
+      ],
+      [
+        "thanks",
+        "谢谢"
+      ],
+      [
+        "sorry",
+        "对不起"
+      ]
+    ],
+    "sha256": "8e11cd3fcbbd9f3a11421f6238bdd50225caa7b41e96ae795fff24be9d6daa56"
+  },
+  {
+    "title": "图画里的三条小路",
+    "seconds": 76.6,
+    "audio": "/yoyo/audio/english-70.mp3",
+    "icon": "🏞️",
+    "words": [
+      [
+        "park",
+        "公园"
+      ],
+      [
+        "beach",
+        "海滩"
+      ],
+      [
+        "forest",
+        "森林"
+      ]
+    ],
+    "sha256": "810cf11183c61ed19e0e6dd06e2d4071ed3fcf1ecccc0ad8f061270191e728fd"
+  }
+]

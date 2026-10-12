@@ -6,8 +6,9 @@ const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
 const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
 const categoryButtons = Array.from(document.querySelectorAll('[data-category]'));
 const categoryPanels = Array.from(document.querySelectorAll('[data-category-panel]'));
-const lastCollections = { bedtime: 'bedtime', english: 'english3' };
+const lastCollections = { bedtime: 'bedtime', english: 'english4' };
 const collectionTitles = {
+  english4: '爸爸陪我学英语第四辑',
   english3: '爸爸陪我学英语第三辑',
   english2: '爸爸陪我学英语第二辑',
   english: '爸爸陪我学英语',

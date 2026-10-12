@@ -109,3 +109,7 @@ jobs:
           for story in $(seq 21 40); do
             curl -fsSI "https://ting.ywjs.com/yoyo/audio/english-$story.mp3" | grep -qi 'content-type: audio/mpeg'
           done
+          curl -fsS https://ting.ywjs.com/yoyo/ | grep -q '学英语第四辑'
+          for story in $(seq 41 70); do
+            curl -fsSI "https://ting.ywjs.com/yoyo/audio/english-$story.mp3" | grep -qi 'content-type: audio/mpeg'
+          done
