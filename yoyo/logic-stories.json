@@ -2,46 +2,46 @@
   {
     "title": "小狗的小被子",
     "seconds": 100.5,
-    "audio": "/yoyo/audio/logic-01.mp3",
+    "audio": "/yoyo/audio/logic-01.mp3?v=voice-only-94d80b40db11",
     "icon": "🐶",
     "description": "比较大小 · 尝试验证",
-    "sha256": "9c6ee72131ee2b63319ad08430ea26ab9dab1dff084d3181c75c1d338835d1ca",
-    "background_music": "原创缓慢氛围和声，-38 LUFS，淡入5秒、淡出7秒"
+    "sha256": "94d80b40db11bc5bdd625dfe3a106587d579be7afe641903a72a0733e400871a",
+    "background_music": "无背景音乐（原始纯对白）"
   },
   {
     "title": "月亮小路的下一步",
     "seconds": 106.7,
-    "audio": "/yoyo/audio/logic-02.mp3",
+    "audio": "/yoyo/audio/logic-02.mp3?v=voice-only-230e63215abb",
     "icon": "🌙",
     "description": "发现规律 · 预测下一步",
-    "sha256": "acd1fac97273333d52d73ff4642dc27e1d580f8423245d71330bf5b8f7ed559b",
-    "background_music": "原创缓慢氛围和声，-38 LUFS，淡入5秒、淡出7秒"
+    "sha256": "230e63215abb8e43f71c910455448bc5ac5f7529fd1d610314b397bb102c955a",
+    "background_music": "无背景音乐（原始纯对白）"
   },
   {
     "title": "小车为什么不走了",
     "seconds": 100.2,
-    "audio": "/yoyo/audio/logic-03.mp3",
+    "audio": "/yoyo/audio/logic-03.mp3?v=voice-only-64bf4275db57",
     "icon": "🚙",
     "description": "观察障碍 · 简单因果",
-    "sha256": "f4077593539e67a7abba7f70eea450000a8629cb4fa82c7f82bdc5eb044753ae",
-    "background_music": "原创缓慢氛围和声，-38 LUFS，淡入5秒、淡出7秒"
+    "sha256": "64bf4275db57daec64a3c1f86da38dd8eb11d4b567ae6a9801729e94880cd5a2",
+    "background_music": "无背景音乐（原始纯对白）"
   },
   {
     "title": "弯弯的小尾巴",
     "seconds": 106.2,
-    "audio": "/yoyo/audio/logic-04.mp3",
+    "audio": "/yoyo/audio/logic-04.mp3?v=voice-only-5e1cf1bc1e21",
     "icon": "🐱",
     "description": "寻找线索 · 验证猜想",
-    "sha256": "4fa913e844fd750e9b10b0f4536ff78a5c0be13a84768cf7a70dce68564bd2ea",
-    "background_music": "原创缓慢氛围和声，-38 LUFS，淡入5秒、淡出7秒"
+    "sha256": "5e1cf1bc1e21306159190d0471f83511f7191ec49cb30a5952fd35d7d06fbaa5",
+    "background_music": "无背景音乐（原始纯对白）"
   },
   {
     "title": "一条没用上的小毯子",
     "seconds": 110.6,
-    "audio": "/yoyo/audio/logic-05.mp3",
+    "audio": "/yoyo/audio/logic-05.mp3?v=voice-only-cb047816bef3",
     "icon": "🦆",
     "description": "一一对应 · 发现遗漏",
-    "sha256": "fbb1854b907a7622b957e6ffe7ad67bdf20d69a937bdc3f2e9c382be071d95fd",
-    "background_music": "原创缓慢氛围和声，-38 LUFS，淡入5秒、淡出7秒"
+    "sha256": "cb047816bef3bf0d9eeb60631ee218b01f8aee5c6cff607d31d0196272022187",
+    "background_music": "无背景音乐（原始纯对白）"
   }
 ]
