@@ -1,0 +1,157 @@
+[
+  {
+    "title": "小篮子里的水果",
+    "seconds": 175.5,
+    "audio": "/yoyo/audio/english-71.mp3",
+    "icon": "🥭",
+    "words": [
+      [
+        "mango",
+        "芒果"
+      ],
+      [
+        "cherry",
+        "樱桃"
+      ],
+      [
+        "pineapple",
+        "菠萝"
+      ]
+    ],
+    "sha256": "0ebd80b548dd392305f1d47cde1ed6e8dc7e56e8d8bae7e791cf9bc4997804c1",
+    "word_counts": {
+      "mango": 6,
+      "cherry": 6,
+      "pineapple": 6
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  },
+  {
+    "title": "小狗要照镜子",
+    "seconds": 170.8,
+    "audio": "/yoyo/audio/english-72.mp3",
+    "icon": "🪞",
+    "words": [
+      [
+        "brush",
+        "软毛刷"
+      ],
+      [
+        "comb",
+        "梳子"
+      ],
+      [
+        "mirror",
+        "镜子"
+      ]
+    ],
+    "sha256": "0d0dded9e9bf4e693d5a62890ac4be0fee6d97403afd6b44c3191e9c019c83a9",
+    "word_counts": {
+      "brush": 6,
+      "comb": 6,
+      "mirror": 6
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  },
+  {
+    "title": "悠悠的小野餐",
+    "seconds": 170.6,
+    "audio": "/yoyo/audio/english-73.mp3",
+    "icon": "🧺",
+    "words": [
+      [
+        "bag",
+        "包"
+      ],
+      [
+        "bottle",
+        "瓶子"
+      ],
+      [
+        "basket",
+        "篮子"
+      ]
+    ],
+    "sha256": "71a9a7b6c8bab37786089f4dce71a05ec55e7472d8e6d78180bfd3c76904e3df",
+    "word_counts": {
+      "bag": 6,
+      "bottle": 6,
+      "basket": 6
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  },
+  {
+    "title": "小书找到了",
+    "seconds": 196.9,
+    "audio": "/yoyo/audio/english-74.mp3",
+    "icon": "📚",
+    "words": [
+      [
+        "rug",
+        "小地毯"
+      ],
+      [
+        "shelf",
+        "架子"
+      ],
+      [
+        "drawer",
+        "抽屉"
+      ]
+    ],
+    "sha256": "161023af6f133c625e4be88cfc07aa026e63bb6803f98bbf81aca04609751728",
+    "word_counts": {
+      "rug": 6,
+      "shelf": 6,
+      "drawer": 6
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  },
+  {
+    "title": "一个小小的哈欠",
+    "seconds": 193.4,
+    "audio": "/yoyo/audio/english-75.mp3",
+    "icon": "🥱",
+    "words": [
+      [
+        "smile",
+        "微笑"
+      ],
+      [
+        "laugh",
+        "笑出声"
+      ],
+      [
+        "yawn",
+        "打哈欠"
+      ]
+    ],
+    "sha256": "b7aa92f7a973f5f7fb32acf33e6def9dfc6bc37799f3ccbcbaf21ee0f801a3ba",
+    "word_counts": {
+      "smile": 6,
+      "laugh": 6,
+      "yawn": 6
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  }
+]
