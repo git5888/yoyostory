@@ -1,0 +1,132 @@
+[
+  {
+    "title": "草地上的两个朋友",
+    "seconds": 185.6,
+    "audio": "/yoyo/audio/english-76.mp3",
+    "icon": "🐑",
+    "words": [
+      [
+        "sheep",
+        "绵羊"
+      ],
+      [
+        "pig",
+        "猪"
+      ]
+    ],
+    "sha256": "cf520604c64c82100d6d67e4ac5d37b05e7ff5b65c36a05adb3f21755b7884a5",
+    "word_counts": {
+      "sheep": 8,
+      "pig": 8
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  },
+  {
+    "title": "小路边的长耳朵",
+    "seconds": 183.1,
+    "audio": "/yoyo/audio/english-77.mp3",
+    "icon": "🐴",
+    "words": [
+      [
+        "horse",
+        "马"
+      ],
+      [
+        "donkey",
+        "驴"
+      ]
+    ],
+    "sha256": "7729713107aa6032ecf2be37abfbcc4fd5aecfd1aa144c40fd3cf9b66cc27006",
+    "word_counts": {
+      "horse": 8,
+      "donkey": 8
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  },
+  {
+    "title": "鸡舍里的早安",
+    "seconds": 186.7,
+    "audio": "/yoyo/audio/english-78.mp3",
+    "icon": "🐔",
+    "words": [
+      [
+        "rooster",
+        "公鸡"
+      ],
+      [
+        "hen",
+        "母鸡"
+      ]
+    ],
+    "sha256": "bf5128e8d81377a4b23088c56720d9cba575b9d2f7e35c952552c7a739553938",
+    "word_counts": {
+      "rooster": 8,
+      "hen": 8
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  },
+  {
+    "title": "小山坡和小池塘",
+    "seconds": 180.4,
+    "audio": "/yoyo/audio/english-79.mp3",
+    "icon": "🪿",
+    "words": [
+      [
+        "goat",
+        "山羊"
+      ],
+      [
+        "goose",
+        "鹅"
+      ]
+    ],
+    "sha256": "4a4288fb5075c551987c563dff2695c69ed3fb55be30bfb44d9421d1585f8d58",
+    "word_counts": {
+      "goat": 8,
+      "goose": 8
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  },
+  {
+    "title": "声音相册里的晚安",
+    "seconds": 183.2,
+    "audio": "/yoyo/audio/english-80.mp3",
+    "icon": "🦉",
+    "words": [
+      [
+        "owl",
+        "猫头鹰"
+      ],
+      [
+        "lion",
+        "狮子"
+      ]
+    ],
+    "sha256": "ea9224ac9a54ee5fc354ef31ddc81285b8fe81383b0bc40f0242e5afa5e4e286",
+    "word_counts": {
+      "owl": 8,
+      "lion": 8
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  }
+]

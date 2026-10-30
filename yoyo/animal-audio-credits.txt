@@ -1,0 +1,57 @@
+听叫声学动物英语：素材署名与许可
+
+五篇故事音频编排及新增贡献采用 CC BY-SA 4.0 许可。
+https://creativecommons.org/licenses/by-sa/4.0/
+动物录音保留各自原许可。已进行节选、轻度降噪、音量调整、淡入淡出；猪叫声重复两次。
+马的录音为所列研究公开的低音调马嘶刺激样例。
+对白为合成角色声音。动物叫声来自下列真实录音。无背景音乐。
+
+sheep: File:Sheep bleating.ogg
+作者：earthcalling
+许可：Public domain 见来源页公共领域声明
+来源：https://commons.wikimedia.org/wiki/File%3ASheep_bleating.ogg
+
+pig: File:Mudchute pig 1.ogg
+作者：Secretlondon
+许可：CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/
+来源：https://commons.wikimedia.org/wiki/File%3AMudchute_pig_1.ogg
+
+horse: File:Mares-Prefer-the-Voices-of-Highly-Fertile-Stallions-pone.0118468.s004.oga
+作者：Lemasson A, Remeuf K, Trabalon M, Cuir F, Hausberger M
+许可：CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+来源：https://commons.wikimedia.org/wiki/File%3AMares-Prefer-the-Voices-of-Highly-Fertile-Stallions-pone.0118468.s004.oga
+
+donkey: File:Домашний Осёл, Киприотский.ogg
+作者：Warper up
+许可：CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/
+来源：https://commons.wikimedia.org/wiki/File%3A%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B8%D0%B9_%D0%9E%D1%81%D1%91%D0%BB%2C_%D0%9A%D0%B8%D0%BF%D1%80%D0%B8%D0%BE%D1%82%D1%81%D0%BA%D0%B8%D0%B9.ogg
+
+hen: File:Hens leaving coop.ogg
+作者：alys
+许可：Public domain 见来源页公共领域声明
+来源：https://commons.wikimedia.org/wiki/File%3AHens_leaving_coop.ogg
+
+rooster: File:Medium rooster crowing.ogg
+作者：alys
+许可：Public domain 见来源页公共领域声明
+来源：https://commons.wikimedia.org/wiki/File%3AMedium_rooster_crowing.ogg
+
+goat: File:Herd of goats bleating.ogg
+作者：stephan
+许可：Public domain 见来源页公共领域声明
+来源：https://commons.wikimedia.org/wiki/File%3AHerd_of_goats_bleating.ogg
+
+goose: File:Geese Honking (loud).ogg
+作者：U.S. Fish and Wildlife Service
+许可：Public domain 见来源页公共领域声明
+来源：https://commons.wikimedia.org/wiki/File%3AGeese_Honking_%28loud%29.ogg
+
+owl: File:Bubo virginianus - Great Horned Owl XC450919.mp3
+作者：Michael & Katie LaTour
+许可：CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/
+来源：https://commons.wikimedia.org/wiki/File%3ABubo_virginianus_-_Great_Horned_Owl_XC450919.mp3
+
+lion: File:Lion raring-sound1TamilNadu178.ogg
+作者：த*உழவன் (Info-farmer)
+许可：Public domain 见来源页公共领域声明
+来源：https://commons.wikimedia.org/wiki/File%3ALion_raring-sound1TamilNadu178.ogg
