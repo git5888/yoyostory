@@ -1,0 +1,132 @@
+[
+  {
+    "title": "小兔子的水果篮",
+    "seconds": 188.5,
+    "audio": "/yoyo/audio/english-81.mp3",
+    "icon": "🍐",
+    "words": [
+      [
+        "pear",
+        "梨"
+      ],
+      [
+        "peach",
+        "桃子"
+      ]
+    ],
+    "sha256": "10c69e51b9f09bbbbdd8b34481d821a233a2e210d5119653dd9a775f93f2427f",
+    "word_counts": {
+      "pear": 8,
+      "peach": 8
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  },
+  {
+    "title": "小熊找到一串水果",
+    "seconds": 199.8,
+    "audio": "/yoyo/audio/english-82.mp3",
+    "icon": "🍇",
+    "words": [
+      [
+        "grape",
+        "葡萄"
+      ],
+      [
+        "strawberry",
+        "草莓"
+      ]
+    ],
+    "sha256": "b3bd2a39bfbf92da99e77ed7f3bac196eed947d664483489c3869b7c17535e3d",
+    "word_counts": {
+      "grape": 8,
+      "strawberry": 8
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  },
+  {
+    "title": "小狗买晚餐",
+    "seconds": 191.1,
+    "audio": "/yoyo/audio/english-83.mp3",
+    "icon": "🥕",
+    "words": [
+      [
+        "carrot",
+        "胡萝卜"
+      ],
+      [
+        "potato",
+        "土豆"
+      ]
+    ],
+    "sha256": "af2e23d38e10c39b315de39e59fdca7c5dad1ee9bbd3d70f842bd7c92fc981f5",
+    "word_counts": {
+      "carrot": 8,
+      "potato": 8
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  },
+  {
+    "title": "小猫的红绿购物单",
+    "seconds": 191.4,
+    "audio": "/yoyo/audio/english-84.mp3",
+    "icon": "🥒",
+    "words": [
+      [
+        "tomato",
+        "番茄"
+      ],
+      [
+        "cucumber",
+        "黄瓜"
+      ]
+    ],
+    "sha256": "cd90c5fad69dde45474fce096a23cbe81412a7d2caabbbfbcc60f44b2f33a7f5",
+    "word_counts": {
+      "tomato": 8,
+      "cucumber": 8
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  },
+  {
+    "title": "小象买一棵小树",
+    "seconds": 197.8,
+    "audio": "/yoyo/audio/english-85.mp3",
+    "icon": "🥦",
+    "words": [
+      [
+        "broccoli",
+        "西兰花"
+      ],
+      [
+        "pumpkin",
+        "南瓜"
+      ]
+    ],
+    "sha256": "e5164434c2a8a1cc180f8e48073f55a85adc0a98e45397ed9e6677a80b66903a",
+    "word_counts": {
+      "broccoli": 8,
+      "pumpkin": 8
+    },
+    "background_music": false,
+    "english_rates": {
+      "adult": "-18%",
+      "child": "-30%"
+    }
+  }
+]
