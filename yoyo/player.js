@@ -8,6 +8,7 @@ const categoryButtons = Array.from(document.querySelectorAll('[data-category]'))
 const categoryPanels = Array.from(document.querySelectorAll('[data-category-panel]'));
 const lastCollections = { bedtime: 'logic', english: 'market' };
 const collectionTitles = {
+  nursery: '宝宝儿歌',
   market: '果蔬超市学英语',
   animals: '听叫声学动物英语',
   english5: '爸爸陪我学英语第五辑',
